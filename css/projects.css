@@ -179,6 +179,7 @@ body {
   font-weight: 1000;
   line-height: 1.38;
   color: #263238;
+  font: 500 1.375em/1.38 museo-slab;
   font-family: "museo-slab";
 }
 
@@ -322,7 +323,7 @@ body {
 
 .image-4 {
   float: right;
-  max-width: 450px;
+  /*max-width: 450px;*/
 }
 
 .intro-1 {
@@ -578,7 +579,7 @@ body {
   background-attachment: scroll, scroll;
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1024px) {
   .container {
     position: relative;
     z-index: 67;
@@ -721,7 +722,7 @@ body {
   }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 610px) {
   body {
     font-size: 1em;
   }
