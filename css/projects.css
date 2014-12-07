@@ -153,7 +153,7 @@ body {
 .header-container {
   float: left;
   width: 80%;
-  margin: 30px 0 0 10%;
+  margin: 40px 0 0 10%;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -179,6 +179,7 @@ body {
   font-weight: 1000;
   line-height: 1.38;
   color: #263238;
+  font-family: "museo-slab";
 }
 
 .nav {
@@ -762,6 +763,7 @@ body {
   }
 
   .navbar .logo {
+    font-family: "museo-slab";
     float: none;
     margin-right: auto;
     margin-left: auto;
