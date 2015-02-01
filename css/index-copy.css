@@ -159,6 +159,7 @@ body {
   color: #455a64;
 }
 
+
 @media(max-width: 960px) {
   .intro-container .image {
     height: auto;
@@ -172,6 +173,8 @@ body {
     margin-right: 0.86291%;
   }
 }
+
+
 
 @media(max-width: 550px) {
   body {

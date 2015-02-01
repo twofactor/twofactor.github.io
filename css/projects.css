@@ -132,7 +132,7 @@ body {
   z-index: 78;
   width: 100%;
   height: 100px;
-  margin-top: -17px;
+  /*margin-top: -17px;*/
 }
 
 .footer-container {
