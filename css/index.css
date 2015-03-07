@@ -283,3 +283,15 @@ body {
     min-height: 900px;
   }
 }
+
+@media(max-width: 380px){
+  .intro-cointainer{
+    height: 500px
+  }
+  .header-container .navbar {
+    font-size: 11pt;
+  }
+  .header-cointainer .navbar .logo{
+    font-size: 16pt;
+  }
+}

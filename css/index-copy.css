@@ -174,7 +174,14 @@ body {
   }
 }
 
-
+@media(max-width: 500px){
+  .intro-cointainer{
+    height: 500px
+  }
+  .header-container .navbar{
+    font-size: 10pt;
+  }
+}
 
 @media(max-width: 550px) {
   body {
