@@ -1,0 +1,316 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("../img/style/background-pattern.png");
+  background-size: 224px 224px;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h1 {
+  font-size: 27pt;
+  margin-top: 70px;
+  margin-bottom: 24px;
+  line-height: 40px;
+  font-weight: 100;
+  text-align: center;
+  color: #03A9F4;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(-223deg, #00BBD6 0%, #03A9F3 99%, #03A9F3 100%);
+  background: -o-linear-gradient(-223deg, #00BBD6 0%, #03A9F3 99%, #03A9F3 100%);
+  -webkit-background-clip: text;
+}
+
+#intro-paragraph {
+
+}
+
+#intro-paragraph p{
+  font-size: 10.5pt;
+  line-height: 16.5pt;
+  color #474747;
+  -webkit-font-smoothing:antialiased;
+  margin-bottom: 1.5em;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+#intro-paragraph .col-md-3{
+  padding-left: 0px;
+}
+
+/* Header profile pic */
+.header-profile .img-thumbnail {
+  width: 100%;
+  border: 0px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17),
+    0px 0px 0px 1px #EEF0F2, inset 0px 1px 1px 0px #FFFFFF,
+    inset 0px 2px 1px 0px #FCFCFD, inset 0px -2px 3px 0px #F9FAFB;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.social-links {
+  padding: 0px;
+}
+
+.btn {
+  -webkit-font-smoothing:antialiased;
+}
+
+.btn i {
+  margin-right: 16px;
+  font-size: 15pt;
+}
+
+
+
+.btn-facebook {
+  padding-top: 8.5px;
+  padding-bottom: 5.5px;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #577FC0 0%, #2C417A 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 1px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  border: 0px;
+  font-size: 13px;
+  color: #FFFFFF !important; /*this is some awful CSS, but it works*/
+  line-height: 15pt;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.17);
+}
+
+
+.btn-facebook:hover {
+  /* Button Copy 7: */
+background-image: linear-gradient(-180deg, #577FC0 0%, #2C417A 100%);
+box-shadow: 0px 0px 4px 0px #567EBE, 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 2px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+border-radius: 5px;
+color: #FFFFFF;
+}
+
+.btn-facebook:active {
+  /* Button Copy 4: */
+  background-image: linear-gradient(-180deg, #324983 0%, #3C5795 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px -1.5px 0px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.btn-mail {
+  padding-top: 11.5px;
+  padding-bottom: 6.5px;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17), 0px 0px 0px 1px rgba(38,49,56,0.06), inset 0px 1px 1px 0px #FFFFFF, inset 0px 2px 1px 0px #FCFCFD, inset 0px -2px 3px 0px #F9FAFB;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #333333 !important;
+  background: #FFFFFF;
+}
+
+.btn-mail i {
+  font-size: 10pt;
+  margin-right: 2px;
+}
+
+.btn-twitter {
+  padding-top: 8.5px;
+  padding-bottom: 5.5px;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #7BD0F5 0%, #3B8BD6 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 1px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  border: 0px;
+  font-size: 13px;
+  color: #FFFFFF !important; /*this is some awful CSS, but it works*/
+  line-height: 15pt;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.17);
+}
+
+.btn-twitter:hover {
+  background-image: linear-gradient(-180deg, #7BD0F5 0%, #3B8BD6 100%);
+  box-shadow: 0px 0px 4px 0px #7BD0F5, 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 2px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.btn-twitter:active {
+  background-image: linear-gradient(-180deg, #3F8AE6 0%, #4DA4DC 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px -1.5px 0px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.btn-twitter i {
+  margin-right: 10px;
+}
+
+.btn-visited {
+  color: #FFFFFF;
+}
+
+.btn_txt {
+  line-height: 10px;
+  position: relative;
+  bottom: 2.4pt;
+  display: inline-block;
+}
+
+/* Main portfolio element */
+#portfolio {
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17), 0px 0px 0px 1px #EEF0F2, inset 0px 1px 1px 0px #FFFFFF, inset 0px 2px 1px 0px #FCFCFD, inset 0px -2px 3px 0px #F9FAFB;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.port_element {
+  min-height: 460px;
+  padding: 15px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.port_element h1 {
+  font-weight: 100;
+  font-size: 36px;
+}
+
+.port_element p {
+  margin: auto;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 20px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.port_buttons {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port_element .btn-default {
+  padding: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-image: linear-gradient(-180deg, #7BD0F5 0%, #3B8BD6 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 1px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  border: 0px;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: #FFFFFF !important; /*this is some awful CSS, but it works*/
+  line-height: 17px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.17);
+}
+
+.port_dark {
+  background-color: #555;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.17);
+}
+
+.btn-default:hover {
+  box-shadow: 0px 0px 4px 0px #7BD0F5, 0px 1px 2px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px 2px 2px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+}
+
+
+.btn-default:active {
+  background-image: linear-gradient(-180deg, #3F8AE6 0%, #4DA4DC 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.17), inset 0px 0px 0px 1px rgba(0,0,0,0.25), inset 0px -1.5px 0px 0px rgba(255,255,255,0.17), inset 0px -2px 3px 0px rgba(0,0,0,0.12);
+  color: #FFFFFF;
+}
+
+/* Hackers at Berkeley */
+
+.port_hab {
+  background-image: url('../img/portfolio/hab.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Various other hackathon projects */
+
+.various_proj {
+  background-image: url('../img/portfolio/various_proj.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.various_proj p {
+  max-width: 600px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
