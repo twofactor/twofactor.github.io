@@ -1,51 +1,542 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.png">
-  <title>David Bui</title>
-  <script type="text/javascript" src="http://use.typekit.net/ttq1ads.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index-grid.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>David Bui</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.png">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body class="body page-index clearfix">
-  <header class="_container clearfix">
-    <div class="header-container header-container-1 clearfix">
-      <div class="navbar clearfix">
-        <a href="index.html" class="logo">David Bui</a>
-        <ul class="nav"><li class="selected"><a href="index.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="http://irisbeta.com/user/143654912/">Blog</a></li>
-        <li><a href="mailto:david@dtbui.com">Contact</a></li>
-        </ul>
-      </div>
-      <h1 class="intro intro-1">Hey! I'm David.</h1>
-      <p class="intro intro-2">I'm a student studying Computer Science at UC Berkeley.</p>
-    </div>
-  </header>
-  <section class="intro intro-3 clearfix">
-    <div class="intro-container clearfix">
-      <img class="image" src="images/david(2).png">
-      <h2 class="intro intro-4">About Me.</h2>
-      <h3 class="intro intro-5">Just a little bit of my life story</h3>
-      <div class="intro intro-6">
-        <p>Hi! I'm a student that is studying Computer Science at UC Berkeley. I enjoy programming and making things, I like to code in Python and Javascript (on both the front and back end.) In addition to that, I also have an interest in UI/UX and graphic design. You can check out my <a href="projects.html">projects/portfolio.</a></p>
-        <p>I also like to make music. You should check out my <a href="http://www.soundcloud.com/codeisvek">soundcloud.</a></p>
-</div>
-    </div>
-  </section>
-  <section class="footer clearfix">
-    <div class="footer-container clearfix">
-      <p class="social"><a href="http://www.github.com/codeisvek"><i class="fa fa-github"></i></a>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">david bui.</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">work</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">profile</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.medium.com/@codeisvek">journal</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 portfolio-item port-a">
+                    <a href="#calhacks" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>Cal Hacks</h3>
+                                <p>hella visual design, branding</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/calhacks.png" class="img-responsive" alt="">
+                    </a>
+                    <a href="#adv " class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>Adventure With Us</h3>
+                                <p>mobile ui design, branding</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/adventurewithus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item port-b">
+                    <a href="#hax" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>Hackers @ Berkeley</h3>
+                                <p>hella visual design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/hab.png" class="img-responsive" alt="">
+                    </a>
+                    <a target="_blank" href="https://medium.com/@codeisvek/nest-android-app-redesign-and-materialization-concept-41249a7a47a1#.6eohjtcm3" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>nest app <br/>redesign concept</h3>
+                                <p>mobile ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/nest.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item port-c">
+                    <a href="#comet" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>comet</h3>
+                                <p>visual design, ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/comet.png" class="img-responsive" alt="">
+                    </a>
+                    <a href="#old" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>old dtbui.com</h3>
+                                <p>illustration, visual design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/old.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-sm-4 portfolio-item">
+                <h3>Older Work</h3>
+                    <span class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>EECS Geofilters</h3>
+                                <p>visual design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/geofilters.png" class="img-responsive" alt="">
+                    </span>
+                    <a href="#cloudchat " class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>CloudChat</h3>
+                                <p>visual design, ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cloudchat.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a target="_blank" href="http://www.istherefreefoodatwoz.com" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>istherefreefoodatwoz</h3>
+                                <p>visual design, ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/woz.png" class="img-responsive" alt="">
+                    </a>
+                    <a href="#csuahack" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>CSUAHackathon fa14</h3>
+                                <p>illustration, web design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/CSUAHack.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#bbord" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>berkeleybord</h3>
+                                <p>visual design, ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/berkeleybord.png" class="img-responsive" alt="">
+                    </a>
+                    
+                    <a href="#whalr" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h3>whalrr</h3>
+                                <p>visual design, ui design</p>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/whalrr.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                        <img src="img/me.jpg" class="img-responsive" />
+                    </div>
+                <div class="col-sm-8">
+                    <h3>hey, i'm david bui.</h3>
+                    <p class="small">I’m a 19 year old student currently studying Computer Science and Architecture at
+                    <a href="http://www.berkeley.edu">UC Berkeley.</a>
+                    At Berkeley, I help educate and introduce people to hacking and design
+                     through
+                    <a href="http://www.hackersatberkeley.com">Hackers @ Berkeley.</a>
+                   I organized and lead design and branding
+                  for
+                  <a href="http://www.calhacks.io">Cal Hacks,</a>
+                   the largest colligate
+                   hackathon of all time.
+                   I design stuff through 
+                  <a href="http://innovativedesign.club">Innovative Design.</a>
+                   I dance (badly).
+                   I am also an undergraduate researcher under professor
+                  <a href="http://www.paulos.net">Eric Paulos’</a>
+                   group in the 
+                  <a href="http://disruptivefabricationdesign.com/">
+                   Tactical Hybrid Ecologies
+                  </a> lab.
+                  </p>
+
+                <p class="small">Outside of Berkeley, I have previously interned at
+                  <a href="http://www.facebook.com">Facebook</a>
+                   and before that I worked briefly at a labor union,
+                  <a href="http://www.udwa.org/">UDW.</a>
+                </p>
+                <p class="small">
+                   In my free time, I DJ
+                  and
+                  <a href="http://soundcloud.com/codeisvek">produce music.</a>
+                   I take pictures and put them on
+                  <a href="http://www.instagram.com/codeisvek">Instagram.</a>
+                   I make
+                  <a href="http://shittyipaddrawings.tumblr.com">digital paintings</a>
+                   on my iPad. I also write on
+                  <a href="http://www.medium.com/@codeisvek">Medium.</a></p>
+                <p class="small">
+                You can reach me through email at <a href="mailto:david@dtbui.com">david@dtbui.com.</a> Say hi! I am also available for freelance work.</p>
+                    </div> 
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="small">Copyright 2015 David Bui</p>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <p><a href="http://www.github.com/codeisvek"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/profile/view?id=306455742"><i class="fa fa-linkedin-square"></i></a>
         <a href="https://www.facebook.com/btiend"><i class="fa fa-facebook"></i></a>
         <a href="https://twitter.com/codeisvek"><i class="fa fa-twitter"></i></a>
       </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-  </section>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="comet" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>CometApp</h3>
+                            <p class="small">visual and ui design</p>
+                            <img src="img/proj/cometapp.png" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/cometbig.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="old" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>old dtbui.com</h3>
+                            <p class="small">illustration and web design</p>
+                            <img src="img/proj/old.png" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/old2.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="whalr" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>whallr</h3>
+                            <p class="small">illustration and ui design</p>
+                            <p class="small">(My first project at a major hackathon)</p>
+                            <img src="img/proj/whalr1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/whalr2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/whalr3.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="bbord" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>berkeley bord</h3>
+                            <p class="small">visual and ui design</p>
+                            <p class="small">(My first hackathon project ever)</p>
+                            <img src="img/images/berkeleybord.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="csuahack" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>csua hackathon website</h3>
+                            <p class="small">illustration and web design</p>
+                            <img src="img/proj/csuahack1.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/csuahack2.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="cloudchat" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>cloudchat</h3>
+                            <p class="small">visual and ui design</p>
+                            <img src="img/proj/cloudchat1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/proj/cloudchat2.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="calhacks" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>cal hacks</h3>
+                            <p class="small">visual design and branding</p>
+                            <img src="img/calhax/ch1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch4.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch5.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch6.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch7.png" class="img-responsive img-centered" alt="">
+                            <img src="img/calhax/ch8.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="hax" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>hackers at berkeley</h3>
+                            <p class="small">hella visual design</p>
+                            <img src="img/hax/hax0.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax4.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax5.png" class="img-responsive img-centered" alt="">
+                            <img src="img/hax/hax6.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="adv" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-lg-offset-1">
+                        <div class="modal-body">
+                            <h3>adventure with us</h3>
+                            <p class="small">branding and ui design</p>
+                            <p class="small">(I helped out a team w/ design during startup weekend Garden Grove). These mockups were made quickly and based off Invisions wonderful <a target="_blank" href="http://www.invisionapp.com/do">Do</a> templates.</p>
+                            <img src="img/adv/ad0.png" class="img-responsive img-centered" alt="">
+                            <div class="col-lg-6">
+                                <img src="img/adv/ad1.png" class="img-responsive img-centered" alt="">
+                                <img src="img/adv/ad5.png" class="img-responsive img-centered" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/adv/ad2.png" class="img-responsive img-centered" alt="">
+                                <img src="img/adv/ad4.png" class="img-responsive img-centered" alt="">
+                            </div>
+
+                            <a data-dismiss="modal">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
 </body>
+
 </html>
