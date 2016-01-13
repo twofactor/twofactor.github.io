@@ -81,10 +81,6 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-.container {
-    max-width: 960px;
-}
-
 header {
     text-align: center;
     color: #000;
@@ -163,8 +159,8 @@ header .intro-text .skills {
 }
 
 .navbar-inverse .navbar-brand {
-    font-weight: 200;
-    color: #333;
+    font-weight: 700;
+    color: #000;
 }
 
 .navbar-inverse .navbar-brand:hover {
@@ -200,7 +196,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    /*padding-top: 100px;*/
 }
 
 section h2 {
@@ -230,6 +226,10 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
+}
+
+#intro {
+    padding-top: 100px;
 }
 
 #about {
