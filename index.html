@@ -19,8 +19,6 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.png">
 
 
@@ -30,6 +28,178 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+    body {
+        background-color: #ffffff;
+    }
+
+    div.caption {
+        text-transform: capitalize;
+    }
+
+    div.caption-content h3 {
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    nav.navbar.navbar-inverse.navbar-fixed-top {
+        position: static;
+        border-style: solid;
+        border-top-width: 10px;
+        border-color: #F7F9FA;
+        background-color: #ffffff;
+    }
+
+    #intro {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    #portfolio {
+        background-color: #f7f9fa;
+        padding-top: 60px;
+    }
+
+    ul.nav.navbar-nav.navbar-right li a {
+        font-weight: 600;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    div.container h2 {
+        text-transform: capitalize;
+        border-color: #000000;
+        color: #000000;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+
+    p.small b {
+        border-color: #ffffff;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    div.col-md-3 {
+        color: #000000;
+    }
+
+    div.col-md-9 {
+        font-size: 16px;
+    }
+
+    div.col-md-9 p {
+        font-size: 16px;
+        margin-bottom: 0;
+        color: #333;
+        line-height: 28px;
+    }
+
+    div.col-md-9 b {
+        color: #000000;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    div.col-md-9 i {
+        color: #333;
+    }
+
+    #resume div.row {
+        margin-bottom: 20px;
+    }
+
+    div.col-md-9 ul {
+        color: #333;
+        padding-left: 18px;
+    }
+
+    #resume {
+        padding-top: 60px;
+        background-color: #ffffff;
+    }
+
+    body.index footer {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    p.small a {
+        color: #000;
+        font-weight: 600;
+    }
+
+    #resume p.small {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    div.col-md-3 b {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    #intro p.small {
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 66%;
+        line-height: 28px;
+    }
+
+    div.col-md-9 ul li {
+        line-height: 28px;
+    }
+
+    footer p.small {
+        font-weight: 600;
+        color: #333;
+        font-size: 14px;
+    }
+
+    button.navbar-toggle {
+        border-style: none;
+        color: #333;
+    }
+
+    span.icon-bar {
+        color: #333333;
+        background-color: #333333;
+    }
+
+    button.navbar-toggle:hover {
+        background-color: #ffffff;
+    }
+
+    button.navbar-toggle:active {
+        background-color: #ffffff;
+    }
+
+    div.navbar-header.page-scroll {
+        border-style: none;
+    }
+
+    div.modal-body h3 {
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    div.modal-body p {
+        color: #333;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    p.small {
+        line-height: 28px;
+    }
+
+
+    </style>
 
 </head>
 
@@ -46,7 +216,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">david bui.</a>
+                <a class="navbar-brand" href="index.html">David Bui.</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,11 +225,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">work</a>
+                    <li>
+                        <a href="index.html">work</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">profile</a>
+                    <li>
+                        <a href="about.html">about</a>
                     </li>
                     <li>
                         <a target="_blank" href="http://www.medium.com/@codeisvek">journal</a>
@@ -73,7 +243,10 @@
 
     <section id="intro">
         <div class="container">
-            <p class="small">Hi, I'm David.</p>
+            <h2>Hi, I'm David Bui.</h2>
+            <p class="small">I'm an <b>Interaction</b> and <b>UI/UX Designer,</b> and sometimes <b>illustrator.</b>
+              I study Computer Science and Architecture at <b>UC Berkeley</b> and am <b>obsessed</b> with the (user) <b>experience</b> of
+            the <b>intersection</b> of <b>technology</b> and <b>built environments,</b> from smart cities and urban communities to the connected home and internet of things.</p>
         </div>
     </section>
 
@@ -86,7 +259,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>Cal Hacks</h3>
-                                <p>hella visual design, branding</p>
+                                <p>Visual and Graphic Design, Branding</p>
                             </div>
                         </div>
                         <img src="img/portfolio/calhacks.png" class="img-responsive" alt="">
@@ -95,7 +268,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>Adventure With Us</h3>
-                                <p>mobile ui design, branding</p>
+                                <p>Mobile UI Design, Branding, App Icon Design</p>
                             </div>
                         </div>
                         <img src="img/portfolio/adventurewithus.png" class="img-responsive" alt="">
@@ -106,7 +279,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>Hackers @ Berkeley</h3>
-                                <p>hella visual design</p>
+                                <p>Visual and Graphic Design</p>
                             </div>
                         </div>
                         <img src="img/portfolio/hab.png" class="img-responsive" alt="">
@@ -115,7 +288,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>nest app <br/>redesign concept</h3>
-                                <p>mobile ui design</p>
+                                <p>Mobile UI Design</p>
                             </div>
                         </div>
                         <img src="img/portfolio/nest.png" class="img-responsive" alt="">
@@ -126,7 +299,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>comet</h3>
-                                <p>visual design, ui design</p>
+                                <p>visual design, UI/UX design</p>
                             </div>
                         </div>
                         <img src="img/portfolio/comet.png" class="img-responsive" alt="">
@@ -143,53 +316,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-        <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                        <img src="img/me.jpg" class="img-responsive" />
-                    </div>
-                <div class="col-sm-8">
-                    <h3>hey, i'm david bui.</h3>
-                    <p class="small">I’m a 19 year old student currently studying at
-                    <a href="http://www.berkeley.edu">UC Berkeley.</a>
-                    At Berkeley, I help educate and introduce people to hacking and design
-                     through
-                    <a href="http://www.hackersatberkeley.com">Hackers @ Berkeley.</a>
-                   I organized and lead design and branding
-                  for
-                  <a href="http://www.calhacks.io">Cal Hacks,</a>
-                   the largest collegiate
-                   hackathon of all time.
-                   I design stuff through 
-                  <a href="http://innovativedesign.club">Innovative Design.</a>
-                   I dance (badly).
-                   I am also an undergraduate researcher under professor
-                  <a href="http://www.paulos.net">Eric Paulos’</a>
-                   group in the 
-                  <a href="http://disruptivefabricationdesign.com/">
-                   Tactical Hybrid Ecologies
-                  </a> lab.
-                  </p>
-                <p class="small">
-                   In my free time, I DJ
-                  and
-                  <a href="http://soundcloud.com/codeisvek">produce music.</a>
-                   I take pictures and put them on
-                  <a href="http://www.instagram.com/codeisvek">Instagram.</a>
-                   I make
-                  <a href="http://shittyipaddrawings.tumblr.com">digital paintings</a>
-                   on my iPad. I also write on
-                  <a href="http://www.medium.com/@codeisvek">Medium.</a></p>
-                <p class="small">
-                You can reach me through email at <a href="mailto:david@dtbui.com">david@dtbui.com.</a> Say hi! I am also available for freelance work.</p>
-                    </div> 
-            </div>
-        </div>
-
     </section>
 
     <footer>
@@ -227,7 +353,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
+                    <div class="col-lg-0">
                         <div class="modal-body">
                             <h3>CometApp</h3>
                             <p class="small">visual and ui design</p>
@@ -250,109 +376,12 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
+                    <div class="col-lg-0">
                         <div class="modal-body">
                             <h3>old dtbui.com</h3>
                             <p class="small">illustration and web design</p>
                             <img src="img/proj/old.png" class="img-responsive img-centered" alt="">
                             <img src="img/proj/old2.png" class="img-responsive img-centered" alt="">
-                            <a data-dismiss="modal">Back</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="whalr" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
-                        <div class="modal-body">
-                            <h3>whallr</h3>
-                            <p class="small">illustration and ui design</p>
-                            <p class="small">(My first project at a major hackathon)</p>
-                            <img src="img/proj/whalr1.png" class="img-responsive img-centered" alt="">
-                            <img src="img/proj/whalr2.png" class="img-responsive img-centered" alt="">
-                            <img src="img/proj/whalr3.png" class="img-responsive img-centered" alt="">
-                            <a data-dismiss="modal">Back</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="bbord" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
-                        <div class="modal-body">
-                            <h3>berkeley bord</h3>
-                            <p class="small">visual and ui design</p>
-                            <p class="small">(My first hackathon project ever)</p>
-                            <img src="img/images/berkeleybord.png" class="img-responsive img-centered" alt="">
-                            <a data-dismiss="modal">Back</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="csuahack" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
-                        <div class="modal-body">
-                            <h3>csua hackathon website</h3>
-                            <p class="small">illustration and web design</p>
-                            <img src="img/proj/csuahack1.jpg" class="img-responsive img-centered" alt="">
-                            <img src="img/proj/csuahack2.png" class="img-responsive img-centered" alt="">
-                            <a data-dismiss="modal">Back</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="cloudchat" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
-                        <div class="modal-body">
-                            <h3>cloudchat</h3>
-                            <p class="small">visual and ui design</p>
-                            <img src="img/proj/cloudchat1.png" class="img-responsive img-centered" alt="">
-                            <img src="img/proj/cloudchat2.png" class="img-responsive img-centered" alt="">
                             <a data-dismiss="modal">Back</a>
                         </div>
                     </div>
@@ -371,12 +400,22 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
+                    <div class="col-lg-0">
                         <div class="modal-body">
-                            <h3>cal hacks</h3>
-                            <p class="small">visual design and branding</p>
+                          <h3>cal hacks</h3>
+                          <p class="small">As the Director of Design for Cal Hacks 2.0, my first task was to redesign the logo for the next year. There was a request to keep it similar to the logo from last year, but show that there was some "evolution" in between.</p>
+                          <p class="small">My first major concept came from keeping the exact same shape/etc. as the pixelated logo from the previous year, but then making it look "low-poly" instead of pixelated, much like the transition from older pixelated games to early 3d games.</p>
+                          <img src="img/calhax/ch0.png" class="img-responsive img-centered" alt="">
+                          <p class="small">However, this concept got mixed responses from the rest of the team. Many wanted to keep the previous "pixelated" style, leading to many variants on the previous logo until we ended up settling on this one:</p>
+                          <img src="img/calhax/ch15.png" class="img-responsive img-centered" alt="">
+                          <p class="small">Although popular, many concerns were brought up that the logo did not have enough "character" or "personality," which led to this complete 180 variant that focused primarily on cuteness and customization:</p>
                             <img src="img/calhax/ch1.png" class="img-responsive img-centered" alt="">
+                            <p class="small">This bear was popular because it met the goals. However, many felt it did not look "tech" enough and lacked the tecnical feel the original logo did. After our former director brought up an idea to check out the graphics from Maple-Story and recreate this logo in a high-res but pixelate form, sitting on a bench in front of a Trader Joes in the Mission District in San Francisco, I cranked out the first outline of what would become our final bear/logo and representation for Cal Hacks 2.0:</p>
                             <img src="img/calhax/ch2.png" class="img-responsive img-centered" alt="">
+                            <p class="small">This logo proved to be a great success, and unfortunately for me, many members of the team wanted their own variants of the bear, giving me a lot of extra pixel-art work.</p>
+                            <br>
+
+                            <p class="small">In addition to the Branding of the event, I was responsible for all of the various promotional artwork such as online and physical banners. Here are a selected few:</p>
                             <img src="img/calhax/ch3.png" class="img-responsive img-centered" alt="">
                             <img src="img/calhax/ch4.png" class="img-responsive img-centered" alt="">
                             <img src="img/calhax/ch5.png" class="img-responsive img-centered" alt="">
@@ -401,18 +440,19 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
+                    <div class="col-lg-0">
                         <div class="modal-body">
                             <h3>hackers at berkeley</h3>
-                            <p class="small">hella visual design</p>
+                            <p class="small">As an officer on the Design and Media committee and later the chair, I was responsible for creating quite a bit of promotional banners for the club, in addition to my other responsibilities. Here are are some selected banners/mockups:</p>
                             <img src="img/hax/hax0.png" class="img-responsive img-centered" alt="">
                             <img src="img/hax/hax1.png" class="img-responsive img-centered" alt="">
                             <img src="img/hax/hax2.png" class="img-responsive img-centered" alt="">
                             <img src="img/hax/hax3.png" class="img-responsive img-centered" alt="">
                             <img src="img/hax/hax4.png" class="img-responsive img-centered" alt="">
-                            <img src="img/hax/hax5.png" class="img-responsive img-centered" alt="">
                             <img src="img/hax/hax6.png" class="img-responsive img-centered" alt="">
-                            <a data-dismiss="modal">Back</a>
+                            <p>During an internal hackathon, I worked on a concept for a redesign of the website.</p>
+                            <img src="img/hax/hax5.png" class="img-responsive img-centered" alt="">
+                            <a data-dismiss="modal">Back to Portfolio</a>
                         </div>
                     </div>
                 </div>

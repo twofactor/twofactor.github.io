@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
     text-transform: lowercase;
-    font-family: "Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
@@ -100,7 +100,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -150,7 +150,7 @@ header .intro-text .skills {
 }
 
 .navbar {
-    font-family: "Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
@@ -288,12 +288,13 @@ section.success a.active {
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    font-weight: 100;
     margin: 0;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content p {
     font-size: 12pt;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 #portfolio * {
@@ -518,4 +519,16 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+body {
+  color: #333;
+}
+
+ul {
+  color: #333;
+}
+
+li {
+  color: #333;
 }
