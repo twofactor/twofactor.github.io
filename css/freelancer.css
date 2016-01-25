@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "proxima-nova", "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
     text-transform: lowercase;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "proxima-nova", "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
@@ -150,7 +150,7 @@ header .intro-text .skills {
 }
 
 .navbar {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "proxima-nova","Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
