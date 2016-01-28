@@ -38,7 +38,6 @@
 
 
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -242,6 +241,18 @@
 
     </style>
 
+    <script>
+         $(".modal").on("show.bs.modal", function()  { // any time a modal is shown
+    var urlReplace = "#" + $(this).attr('id'); // make the hash the id of the modal shown
+    history.pushState(null, null, urlReplace); // push state that hash into the url
+  });
+
+  // If a pushstate has previously happened and the back button is clicked, hide any modals.
+  $(window).on('popstate', function() { 
+    $(".modal").modal('hide');
+  });
+  </script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -325,7 +336,7 @@
                         </div>
                         <img src="img/portfolio/hab.png" class="img-responsive" alt="">
                     </a>
-                    <a target="_blank" href="https://medium.com/@codeisvek/nest-android-app-redesign-and-materialization-concept-41249a7a47a1#.6eohjtcm3" class="portfolio-link " data-toggle="modal">
+                    <a href="#nest" class="portfolio-link animated fadeIn" data-toggle="modal" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <h3>nest app <br/>redesign concept</h3>
@@ -407,6 +418,170 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="nest" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0">
+                        <div class="modal-body">
+                            <h3>Nest Visual Redesign Concept</h3>
+                            <i>This post originally appeared on Medium.com</i>
+                            <p class="small"><br>I really like the design of the products that Nest makes, and their dedication to being a design-oriented company.</p>
+                            <p class="small">
+                            However, the Android app, although pretty well designed, isn’t consistent with the rest of Android and Google’s material design guidelines, despite being a Google company themselves.
+                            </p>
+                            <p class="small">
+                            Nest’s Android app allows the user to check and maintain their nest products, the thermostat and Nest Protect (the smoke and carbon monoxide detector.)
+                            </p>
+                            <p class="small">
+                            When doing this visual redesign I kept careful attention not to radically change the design to the point where it was a completely new app, but rather to make smaller more subtle changes in order to make the app more consistent with the rest of Android as well as all of Google’s own Android applications.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"><center><i>A home screen with the old icon</i></center>
+                        <img src="img/portfolio/nest/iconold.png" class="img-responsive img-centered" alt="">
+                        
+                    </div>
+                    <div class="col-sm-4"><center><i>A home screen with the new icon</i></center>
+                    <img src="img/portfolio/nest/iconnew.png" class="img-responsive img-centered" alt="">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <p class="small">
+                                The first part that I redesigned was the app’s icon. Although the icon isn’t bad, it doesn’t fit well with the rest of Android and Google’s guidelines in style as well as the size of the icon itself.
+                                </p>
+                            <p class="small">
+                                Redesigning the icon involved subtle changes such as changing the size of the square to be more consistent with Google’s other Android apps, as well as slightly adjusting the colors and drop shadow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                        <img src="img/portfolio/nest/opening.png" class="img-responsive img-centered" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="modal-body">
+                            <h3>Onboarding</h3>
+                            <p class="small">
+                                When the app is signed in for the first time, it gives the user the option to add their Nest devices to the app, logically the first thing that should be done.
+                            </p>
+                            <p class="small">
+                                In addition, I’ve kept the little marker at the bottom to “Learn More” in case a user wanted more information.
+                            </p>
+                            <p class="small">
+                                This screen is mostly the same as it is in the current Android app, with the main differences being little ones to make it fit Android better. The font has been changed to the stock Android one, Roboto and the menu icon has been changed to the same one that most other Material apps use. In addition, I have replaced the realistic cloud image at the top. Instead, I made a noisy and cartoonish graphic in the same style as the ones that are often in many of Google’s other apps, such as Google Now and Google Calendar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Home and Main Menu</h3>
+                            <p class="small">
+                                After signing in, the user is presented with the home screen.
+                            </p>
+                            <p class="small">
+                                In addition to changing the top graphic, I chose to use the “cards” element found in many of other Android apps such as Google Keep and Play Music to represent the different added devices. The main menu has also been redesigned to fit the typical Android Style, and overlays the main app rather than pushing it out of the way.
+                            </p>
+                            <p class="small">
+                                In contrast to the current Android app, I have switched the positions of the temperature and menu icons (the menu is now on the left). This allows for more consistency and a more native feel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="modal-body">
+                            <img src="img/portfolio/nest/home.png" class="img-responsive img-centered" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="modal-body">
+                            <img src="img/portfolio/nest/moar.png" class="img-responsive img-centered" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Thermostat Screen and Thermostat Settings</h3>
+                            <p class="small">
+                                Pressing on a certain thing (the upstairs icon in this case) would open it up. This screen shows the status of the thermostat, using a larger version of the cards from the home screen. At the top right corner is the Thermostat’s menu.
+                            </p>
+                            <p class="small">
+                                Pressing this opens up a typical Android style menu that allows for other settings and information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Next Protect and Protect Settings</h3>
+                            <p class="small">
+                                Protect has been redesigned in a similar way. The main screen for the Nest Protect gives an indicator as to the status of the thermostat and its functionality. Below that are indicators for the status of specific locations. These are put outside of the card because they serve as additional information to the card, rather than an essential part of the card itself.
+
+                            </p>
+                            <p class="small">
+                                The menu for more information has again been redesigned for a much more native Android feel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="modal-body">
+                            <img src="img/portfolio/nest/moar.png" class="img-responsive img-centered" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="modal-body">
+                            <img src="img/portfolio/nest/protecthistory.png" class="img-responsive img-centered" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Messages and Protect History</h3>
+                            <p class="small">
+                                The Message and Protect History screens have also been visually redesigned in order to fit the rest of the app and Material Design better. The spacing and margins have been adjusted to fit the standard Material guidelines, as well as the top (app) bar being adjusted to fit the typical size.
+                            </p>
+                            <p class="small">
+                                (Personally, this was one of my favorite parts of this redesign.)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-0">
+                        <div class="modal-body">
+                            <p class="small">
+                                I hope that you have appreciated my redesign concept. Although I do understand that Nest, although integrating with Google, prefer to make sure that they keep their product base separate, it is still very important that they (and all app developers for matter) take note of the Material Design guidelines for Android when developing.
+                                </p><p class="small">
+                                Making sure that Android apps feel native typically does not require massive changes to the UI but rather subtle ones. These changes make the application visually and interactively fit in better with Android. This gives the app a more native and polished feel, and demonstrates that the developer has a commitment to supporting Android users. Android apps that don’t fit in visually or look like iOS apps usually give the impression that Android users are being considered as an afterthought, rather than a priority.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="old" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -452,7 +627,7 @@
                           <img src="img/calhax/ch15.png" class="img-responsive img-centered" alt="">
                           <p class="small">Although popular, many concerns were brought up that the logo did not have enough "character" or "personality," which led to this complete 180 variant that focused primarily on cuteness and customization:</p>
                             <img src="img/calhax/ch1.png" class="img-responsive img-centered" alt="">
-                            <p class="small">This bear was popular because it met the goals. However, many felt it did not look "tech" enough and lacked the technical feel the original logo did. After our former director brought up an idea to check out the graphics from Maple-Story and recreate this logo in a high-res but pixelated form, sitting on a bench in front of a Trader Joes in the Mission District in San Francisco, I cranked out the first outline of what would become our final bear/logo and representation for Cal Hacks 2.0:</p>
+                            <p class="small">This bear was popular because it took care of the problems with the previous one. However, many felt it did not look "tech" enough and lacked the technical feel the original logo did. After our former director brought up an idea to check out the graphics from Maple-Story and recreate this logo in a high-res but pixelated form, sitting on a bench in front of a Trader Joes in the Mission District in San Francisco, I cranked out the first outline of what would become our final bear/logo and representation for Cal Hacks 2.0:</p>
                             <img src="img/calhax/ch2.png" class="img-responsive img-centered" alt="">
                             <p class="small">This logo proved to be a great success, and unfortunately for me, many members of the team wanted their own variants of the bear, giving me a lot of extra pixel-art work.</p>
                             <br>
@@ -502,7 +677,9 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="adv" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="adv" tabindex="-1" role="dialog" >
+
+
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -512,27 +689,105 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-0 col-lg-offset-1">
+                    <div class="col-lg-12">
                         <div class="modal-body">
-                            <h3>adventure with us</h3>
-                            <p class="small">branding and ui design</p>
-                            <p class="small">I came by to Startup Weekend Garden Grove. As an attendee who was only there for the first day, I was able to help out a potential startup with the designs for their app. Because I was only there for a bit and the developers wanted to get to working on the app concept as soon as possible, it was important that the mockups were created quickly. In addition to the logo and app icon, the UI mockups were made using parts from Invisions wonderful <a href="http://www.invisionapp.com/do">Do</a> templates.</p>
-                            <img src="img/aven/a0.png" class="img-responsive img-centered" alt="">
-                            <div class="col-lg-6">
-                                <img src="img/aven/a1.png" class="img-responsive img-centered" alt="">
-                                <img src="img/aven/a5.png" class="img-responsive img-centered" alt="">
-                            </div>
-                            <div class="col-lg-6">
-                                <img src="img/aven/a2.png" class="img-responsive img-centered" alt="">
-                                <img src="img/aven/a4.png" class="img-responsive img-centered" alt="">
-                            </div>
-
-                            <a data-dismiss="modal">Back</a>
+                            <h3>Adventure With Us</h3>
+                            <p class="small"><br>I came by to Startup Weekend Garden Grove. As an attendee who was only there for the first day, I was able to help out a potential startup with the designs for their app. Because I was only there for a bit and the developers wanted to get to working on the app concept as soon as possible, it was important that the mockups were created quickly. The total process, including sketching out UI designs and interaction patterns and then making the in Sketch took about 5 hours total. The UI mockups were made using parts from Invisions wonderful <a href="http://www.invisionapp.com/do">Do</a> templates.</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Branding</h3>
+                            <p class="small">
+                                The logo concept was picked by the rest of the team after a few initial concepts. Because the app primarily focused on a friendly travel experience, something along those lines was preferred. The logo consists of a "map marker" with a smiley face on it, as well as a second marker in the background to represent the the "Us" part of the app.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                    <img src="img/aven/a0.png" class="img-responsive img-centered" alt="">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>(More) Branding</h3>
+                            <p class="small">
+                                The iOS App Icon was made to be consistent with the rest of iOS7. It consisted of the white icon on top of a gradient with the purple colors featured heavily throughout the app and marketing material.
+                            </p>
+
+                            <p class="small">
+                                The Login Screen was made quickly based of the sketch template and featured similar branding.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4"><center><i>The Icon</i></center>
+                        <img src="img/aven/avenscreen.png" class="img-responsive img-centered" alt="">
+                        
+                    </div>
+                    <div class="col-sm-4"><center><i>Login</i></center>
+                    <img src="img/aven/a1.png" class="img-responsive img-centered" alt="">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4"><center><i>The Login Screen</i></center>
+                        <img src="img/aven/a3.png" class="img-responsive img-centered" alt="">
+                        
+                    </div>
+                    <div class="col-sm-4"><center><i>Main (Home) Screen/Search</i></center>
+                    <img src="img/aven/a5.png" class="img-responsive img-centered" alt="">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Finding a Guide</h3>
+                            <p class="small">
+                                After logging in/signing up, the first thing a user would see would be the Search page, prepopulated with a search from the location they were currently in. The Search page's UI design was inspired by Yelp's and enables a user to search for Tour Guides in certain locations, presented as a list. The decision to present tour guides first thing was made because that was the primary (and perhaps, only) purpose of the app.
+                            </p>
+
+                            <p class="small">
+                                (Bao Nguyen, who we used as a filler person, is the mayor of Garden Grove who put on the event, and his invitation was the main reason I showed up.)
+                            </p>
+
+                            <p class="small">
+                                Pressing on a tour guide would present a screen that would tell more information about the guide, like reviews as well as what specific tours they offer.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="modal-body">
+                            <h3>Booking a Tour</h3>
+                            <p class="small">
+                                Viewing a tour would show more information about tour before it is booked, such as where it covers as well as various videos or pictures featured.
+                            </p>
+                            <p class="small">
+                                After booking a tour, an itinerary screen exists to give exact information in order to remind the user about the tour they booked.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/aven/a2.png" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/aven/a4.png" class="img-responsive img-centered" alt="">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
     <!-- jQuery -->
