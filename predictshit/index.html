@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Instant PredictShit</title>
+
+    <!-- Bootstrap Core CSS -->
+    <script src="https://use.typekit.net/ttq1ads.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/moment.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h6>Cal Hacks / Trash Talk</h6>
+                <h1>WILL JONATHAN LIN RELEASE HIS TINDER SCREENSHOTS WITHIN THE WEEK?</h1>
+                <span class="wow">Latest price: 15¢ <span class="change"><i class="fa fa-angle-down"></i> 6¢</span></span>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+              <img class="img-responsive" src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/551484_10151732272518332_740215233_n.jpg?oh=a019daf5e43cc16d23865f5aee79de94&oe=5788FF61"/>
+          </div>
+            <div class="col-sm-10">
+                <div class="well text-center">
+                    <a href="#" class="btn btn-primary">Buy Yes</a><span class="money">Click to match Offers starting at <b>15¢,</b> or to make your own, lower Offer.</span><br/>
+                    <a href="#" class="btn btn-primary">Buy No</a><span class="money">Click to match Offers starting at <b>85¢,</b> or to make your own, lower Offer.</span><br/>
+                </div>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>If this prediction comes true, Instant PredictShit will redeem all Yes shares at $1. Shares in No will have zero value. If this prediction does not come true, Instant PredictShit will redeem all No shares at $1. Shares in Yes will have zero value.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+              <table style="width:100%">
+              <tr>
+                <td>Symbol:</td>
+                <td>JONATHAN.TINDER.SCREENSHOTS</td>
+              </tr>
+              <tr>
+                <td>Start Date:</td>
+                <td>4/6/2016</td>
+              </tr>
+              <tr>
+                <td>End Date:</td>
+                <td>4/11/2016</td>
+              </tr>
+              <tr>
+                <td>Shares Traded:</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Today's Volume:</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Total Shares:</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Today's Change:</td>
+                <td class="change">-6 ¢</td>
+              </tr>
+              </table>
+            </div>
+            <div class="col-md-8">
+                <canvas id="myChart" width="100%" height="100%"></canvas>
+                <center><h6>This is where the stock chart would go but I was too lazy to write it.</h6></center>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; David 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+
+
+var data = {
+labels: ["January", "February", "March", "April", "May", "June", "July"],
+datasets: [
+    {
+        label: "My First dataset",
+        fillColor: "rgba(220,220,220,0.2)",
+        strokeColor: "rgba(220,220,220,1)",
+        pointColor: "rgba(220,220,220,1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(220,220,220,1)",
+        data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+        label: "My Second dataset",
+        fillColor: "rgba(151,187,205,0.2)",
+        strokeColor: "rgba(151,187,205,1)",
+        pointColor: "rgba(151,187,205,1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(151,187,205,1)",
+        data: [28, 48, 40, 19, 86, 27, 90]
+    }
+]
+};
+
+var myLineChart = new Chart(ctx).Line(data);
+
+
+    </script>
+
+</body>
+
+</html>
