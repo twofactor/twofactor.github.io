@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="895px" height="200px" viewBox="0 0 895 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 16 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-16-Copy">
+            <g id="bent-spoon-copy" transform="translate(0.000000, 9.000000)" stroke-linecap="round" stroke="#F44336" stroke-width="8.4">
+                <g id="Group" transform="translate(47.445181, 50.498254) rotate(-20.000000) translate(-47.445181, -50.498254) translate(17.945181, 7.998254)" stroke-linejoin="round">
+                    <path d="M8.625,7.95807864e-13 C8.625,7.95807864e-13 -4.99363404,54.6590909 3.42303263,67.2727273 C11.8396993,79.8863636 17.0416665,84.0909091 17.0416665,84.0909091" id="Path-62"></path>
+                    <path d="M50.2394445,-6.39488462e-14 C50.2394445,-6.39488462e-14 36.6208104,54.6590909 45.0374771,67.2727273 C53.4541438,79.8863636 58.656111,84.0909091 58.656111,84.0909091" id="Path-62-Copy" transform="translate(50.473889, 42.045455) scale(-1, 1) translate(-50.473889, -42.045455) "></path>
+                    <path d="M21.25,5.96855898e-13 L21.25,50.4545455" id="Path-64"></path>
+                    <path d="M38.0833333,-3.0908609e-13 L38.0833333,50.4545455" id="Path-65"></path>
+                </g>
+                <g id="Group-2" transform="translate(57.366028, 131.382203) rotate(-350.000000) translate(-57.366028, -131.382203) translate(37.866028, 84.382203)">
+                    <path d="M8.59794451,12.8098828 L10.4527549,93.6729294" id="Path-66"></path>
+                    <path d="M38.3952817,0.877986743 L38.3952815,19.5675809 L26.9765067,88.5621443" id="Path-66-Copy" transform="translate(32.685894, 44.720066) scale(-1, 1) translate(-32.685894, -44.720066) "></path>
+                </g>
+            </g>
+            <text id="DICED-Copy" font-family="Montserrat-Light, Montserrat" font-size="188" font-weight="300" letter-spacing="20.8888893" fill="#263238">
+                <tspan x="155" y="166">DICED</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
