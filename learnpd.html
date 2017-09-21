@@ -1,0 +1,467 @@
+<!doctype html>
+<html><head><title>Learning Product Design Resources Dump</title><meta charset="UTF-8"><link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic|Roboto:400,700,700italic,400italic" rel="stylesheet" type="text/css"><style>/*
+ * Copyright 2014 Quip
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ */
+
+body {
+    font-size: 15px;
+    color: #333;
+    background: #fff;
+    padding: 60px 95px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+}
+
+/* Headings */
+h1, h2, h3, th {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 42px;
+}
+
+h1:first-child {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* Body text */
+body, p, ul, ol, td {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+blockquote, q {
+    display: block;
+    margin: 1em 0;
+    font-style: italic;
+}
+
+blockquote a, q a {
+    text-decoration: underline;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 4px solid #a6a6a6;
+}
+
+q {
+    color: #a6a6a6;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    quotes: none;
+}
+
+q a {
+    color: #a6a6a6;
+}
+
+code, pre {
+    font-family: Consolas, "Liberation Mono", Menlo, "Courier Prime Web", Courier, monospace;
+    background: #f3f3f3;
+}
+
+code {
+    padding: 1px;
+    margin: 0 -1px;
+    border-radius: 3px;
+}
+
+pre {
+    display: block;
+    line-height: 20px;
+    text-shadow: 0 1px white;
+    padding: 5px 5px 5px 30px;
+    white-space: nowrap;
+    position: relative;
+    margin: 1em 0;
+}
+
+pre:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    border-left: solid 1px #dadada;
+}
+
+/* Lists */
+div[data-section-style="5"],
+div[data-section-style="6"],
+div[data-section-style="7"] {
+    margin: 12px 0;
+}
+
+ul {
+    padding: 0 0 0 40px;
+}
+
+ul li {
+    margin-bottom: 0.4em;
+}
+
+/* Bulleted list */
+div[data-section-style="5"] ul {
+    list-style-type: disc;
+}
+div[data-section-style="5"] ul ul {
+    list-style-type: circle;
+}
+div[data-section-style="5"] ul ul ul {
+    list-style-type: square;
+}
+div[data-section-style="5"] ul ul ul ul {
+    list-style-type: disc;
+}
+div[data-section-style="5"] ul ul ul ul ul {
+    list-style-type: circle;
+}
+div[data-section-style="5"] ul ul ul ul ul ul {
+    list-style-type: square;
+}
+
+/* Numbered list */
+div[data-section-style="6"] ul {
+    list-style-type: decimal;
+}
+div[data-section-style="6"] ul ul {
+    list-style-type: lower-alpha;
+}
+div[data-section-style="6"] ul ul ul {
+    list-style-type: lower-roman;
+}
+div[data-section-style="6"] ul ul ul ul {
+    list-style-type: decimal;
+}
+div[data-section-style="6"] ul ul ul ul ul {
+    list-style-type: lower-alpha;
+}
+div[data-section-style="6"] ul ul ul ul ul ul {
+    list-style-type: lower-roman;
+}
+
+/* Checklist */
+div[data-section-style="7"] ul {
+    list-style-type: none;
+}
+
+div[data-section-style="7"] ul li:before {
+    content: "\2610";
+    position: absolute;
+    display: inline;
+    margin-right: 1.2em;
+    margin-left: -1.2em;
+}
+
+div[data-section-style="7"] ul li.parent:before {
+    content: "";
+}
+
+div[data-section-style="7"] ul li.parent {
+    font-weight: bold;
+}
+
+div[data-section-style="7"] ul li.checked {
+    text-decoration: line-through;
+}
+
+div[data-section-style="7"] ul li.checked:before {
+    content: "\2611";
+    text-decoration: none;
+}
+
+/* Tables */
+div[data-section-style="8"] {
+    margin: 12px 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: solid 1px #7c7c7c;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    table-layout: fixed;
+    position: relative;
+}
+
+table th, table td {
+    padding: 2px 2px 0;
+    min-width: 1.5em;
+    word-wrap: break-word;
+}
+
+table th {
+    border-bottom: 1px solid #ccc;
+    background: #f0f0f0;
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #3a4449;
+    text-align: center;
+}
+
+table td {
+    padding-top: 0;
+    border-left: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    vertical-align: top;
+}
+
+table td.bold {
+    font-weight: bold;
+}
+
+table td.italic {
+    font-style: italic;
+}
+
+table td.underline {
+    text-decoration: underline;
+}
+
+table td.strikethrough {
+    text-decoration: line-through;
+}
+
+table td.underline.strikethrough {
+    text-decoration: underline line-through;
+}
+
+table td:first-child {
+    border-left: hidden;
+}
+
+table tr:first-child td {
+    border-top: hidden;
+}
+
+/* Images */
+div[data-section-style="11"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div[data-section-style="11"][data-section-float="0"] {
+    clear: both;
+    text-align: center;
+}
+
+div[data-section-style="11"][data-section-float="1"] {
+    float: left;
+    clear: left;
+    margin-right: 20px;
+}
+
+div[data-section-style="11"][data-section-float="2"] {
+    float: right;
+    clear: right;
+    margin-left: 20px;
+}
+
+div[data-section-style="11"] img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+hr {
+    width: 70px;
+    margin: 20px auto;
+}
+</style></head><body>
+    <a href="index.html">Back to Home</a>
+    
+    <h1 id='cLTACA4Z5Ax'><b>Learning Product Design Resources Dump</b></h1>
+
+<h2 id='cLTACANi9fO'><b>What the fuck is product design anyways</b></h2>
+
+<div data-section-style='5'><ul id='cLTACAXHYDC'><ul><li id='cLTACAHvoTB' class='' value='1'>Stephanie Engle’s “<a href="https://medium.com/hh-design/intro-to-product-design-c2dbbc7809d3">What Is Product Design</a>” is an absolutely amazing introduction to defining product design and honestly does it better than I could ever 
+
+<br/></li><li id='cLTACA1TbMl' class=''>Eric Erickson’s "<a href="https://medium.com/@ericeriksson/what-is-product-design-9709572cb3ff">What Is Product Design</a>” is another good take.
+
+<br/></li><li id='cLTACAee2a9' class='parent'><a href="https://medium.com/hh-design/great-examples-of-product-design-821c9b29140f">Great Examples of Design Process</a> by Chen Ye
+
+<br/></li><ul><li id='cLTACAosC45' class=''>Warning: this is a list of many articles LOL
+
+<br/></li><li id='cLTACAQJkQW' class=''>Also good inspiration for doing writeups about your projects
+
+<br/></li></ul></ul></ul></div><h2 id='cLTACApN4xS'><b>The Craft</b></h2>
+
+Learning to use the tools<br/>
+
+<div data-section-style='5'><ul id='cLTACAg5fiw'><ul><li id='cLTACAWjxor' class='parent' value='1'><a href="https://sketchapp.com/">Sketch</a>
+
+<br/></li><ul><li id='cLTACAIuCx0' class='parent'>The only tool you’ll basically 100% need to learn
+
+<br/></li><ul><li id='cLTACASh6iI' class=''>Figma works too if you don’t have a Mac but I can’t speak for it
+
+<br/></li></ul><li id='cLTACASzl8k' class='parent'>Crafting UIs
+
+<br/></li><ul><li id='cLTACAULN4c' class=''>Honestly just grab an <a href="http://facebook.design/ios9">iOS</a> or <a href="https://material.io/guidelines/resources/sticker-sheets-icons.html#sticker-sheets-icons-components">Material</a> UI Kit and start copying and pasting and rearranging stuff onto your own separate sketch document
+
+<br/></li></ul><li id='cLTACAM8K4U' class='parent'>Honestly the best way to learn (after picking up the very basics) is to
+
+<br/></li><ul><li id='cLTACAXhw6X' class='parent'>Look at some existing files and see how people create things in sketch (layers, groups, shading, colors, borders)
+
+<br/></li><ul><li id='cLTACAGw9Ns' class=''><a href="https://www.sketchappsources.com/free-source/2113-facebook-analytics-ui-kit-sketch-freebie-resource.html">Facebook Analytics UI Pack</a>
+
+<br/></li><li id='cLTACA2Br78' class=''>The UI kits i linked earlier
+
+<br/></li></ul><li id='cLTACAAo6Hb' class=''>Look at things you like on Dribbble and try to recreate them afterwards, great way to learn Visual UI design and using sketch
+
+<br/></li></ul></ul><li id='cLTACAAv1ZF' class='parent'><a href="https://origami.design/">Origami</a>
+
+<br/></li><ul><li id='cLTACA4VNpD' class=''>Save this for once you actually can start making UIs and flows in sketch
+
+<br/></li><li id='cLTACAG7qOn' class=''>Prototyping!!!!!!!!!
+
+<br/></li><li id='cLTACA5gtmy' class=''>Make things that feel just like the real app!
+
+<br/></li><li id='cLTACAhjtNg' class=''>Orgami’s own tutorials are the best
+
+<br/></li></ul></ul></ul></div><br/>
+
+<h2 id='cLTACA4IZdn'><b>Visual and UI Design</b></h2>
+
+<div data-section-style='5'><ul id='cLTACANn0Ix'><ul><li id='cLTACAVEQWC' class='' value='1'><a href="https://medium.com/hh-design/crash-course-ui-design-25d13ff60962">Crash Course in UI Design</a>
+
+<br/></li><li id='cLTACASuAft' class=''>This Twitter Moment has bunch of really really good UI design tips: <a href="https://twitter.com/i/moments/880688233641848832">https://twitter.com/i/moments/880688233641848832</a>
+
+<br/></li></ul></ul></div><br/>
+
+<h2 id='cLTACAkXBbg'><b>Making portfolios</b></h2>
+
+<div data-section-style='5'><ul id='cLTACA12rhX'><ul><li id='cLTACAVFHBT' class='' value='1'>Simon Pan’s<a href="https://medium.com/interactive-mind/great-design-portfolios-are-great-stories-7bb2617cd7ab"> Great Portfolios are Great Stories</a>
+
+<br/></li><li id='cLTACApX0ns' class='parent'>On portfolios:
+
+<br/></li><ul><li id='cLTACAx0HNB' class=''>1st impression matters<b> a lot. </b>People aren’t going to spend too much time looking at your portfolio at first before making a move on/reject decision
+
+<br/></li><li id='cLTACAtTTEv' class='parent'>Curate your projects
+
+<br/></li><ul><li id='cLTACAN6SdW' class=''>Thumbnails should look visually consistent with eachother
+
+<br/></li><li id='cLTACAqvtce' class='parent'>Have a wide breath of material
+
+<br/></li><ul><li id='cLTACAMXi3z' class=''>a bit of ui, a bit of ux, a bit of product, graphic, illustration, etc
+
+<br/></li></ul><li id='cLTACAyBNqG' class=''>Don’t be afraid to put other creative work on, but don’t highlight it to the point it gets in the way of the work you’re trying to get hired for
+
+<br/></li><li id='cLTACAIJsOU' class=''>Not every piece deserves to be on your portfolio
+
+<br/></li></ul><li id='cLTACAdNsjW' class='parent'>Case Studies
+
+<br/></li><ul><li id='cLTACAz5B2l' class='parent'>The most important rule with these is that <b>Case Studies are more for You than the reader</b>
+
+<br/></li><ul><li id='cLTACAgEz8Z' class=''>What I mean by this is no one will ever read it more than a quick skim, but having a good writeup provides you a wonderful framework talk about the project effectively when interviewing
+
+<br/></li></ul><li id='cLTACAdwa5W' class='parent'>Start by showing the final product
+
+<br/></li><ul><li id='cLTACAf5no3' class=''>otherwise people will have to scroll to see what it looks like and no one likes doing that
+
+<br/></li></ul><li id='cLTACA3umWG' class='parent'>Example Loose Template
+
+<br/></li><ul><li id='cLTACAkh5in' class=''>Problem
+
+<br/></li><li id='cLTACA6fw3P' class=''>Solution
+
+<br/></li><li id='cLTACAK6NPu' class=''>Implementation
+
+<br/></li></ul><li id='cLTACAK0FKX' class='parent'>Don’t be afraid to talk about the Process
+
+<br/></li><ul><li id='cLTACAvHbCp' class=''>Who worked with
+
+<br/></li><li id='cLTACAaKW6M' class=''>Why project was done (background)
+
+<br/></li><li id='cLTACAOo16I' class=''>Results
+
+<br/></li><li id='cLTACAfHuhu' class=''>Backwards thoughts
+
+<br/></li></ul></ul></ul><li id='cLTACAzPVCh' class=''>Early Career Portfolios Inspiration
+
+<br/></li></ul><li id='cLTACAl1MzZ' class='parent'><i>I’ve highlighted in </i><b><i>bold</i></b><i> the ones I think are amazing good models of what your first portfolio for recruiting should aspire to be like, re: quality of design work, depth of case studies/writeups, curation of work</i><i> </i><i>(</i><i>number and type of projects), as well as general presentation of the work.</i>
+
+<br/></li><ul><ul><li id='cLTACAMiqfs' class=''><a href="http://shanahu.com/#/">http://shanahu.com/</a>
+
+<br/></li><li id='cLTACAvoy2j' class=''><a href="http://www.tinaxu.com/"><b>http://www.tinaxu.com/</b></a>
+
+<br/></li><li id='cLTACAcY5v0' class=''><a href="https://www.yudisun.com/"><b>https://www.yudisun.com/</b></a>
+
+<br/></li><li id='cLTACA4c6Wj' class=''><a href="http://www.tiffany.kim/">http://www.tiffany.kim/</a> 
+
+<br/></li><li id='cLTACAkawKI' class=''><a href="http://www.katherineliu.me/"><b>http://www.katherineliu.me/</b></a>
+
+<br/></li><li id='cLTACAMfGoY' class=''><a href="http://hongyexu.co/">http://hongyexu.co/</a>
+
+<br/></li><li id='cLTACAYuKXh' class=''><a href="http://www.kathytzhou.com/">http://www.kathytzhou.com</a>
+
+<br/></li><li id='cLTACA7YkTM' class=''><a href="https://www.behance.net/lee94josh/appreciated">https://www.behance.net/lee94josh/appreciated</a>
+
+<br/></li><li id='cLTACAe6JYy' class=''><a href="http://davidbui.squarespace.com/work">http://davidbui.squarespace.com/work</a>
+
+<br/></li></ul></ul></ul></div><br/>
+
+<h2 id='cLTACAeVNR7'><b>Interviewing</b></h2>
+
+<div data-section-style='5'><ul id='cLTACARRQMQ'><ul><li id='cLTACAxepAO' class='parent' value='1'>The Facebook Design Interview Series is a really good set of medium articles
+
+<br/></li><ul><li id='cLTACAICYxk' class='parent'>Andrew Hwang’s is really really good 
+
+<br/></li><ul><li id='cLTACAJXtvy' class=''><a href="https://medium.com/facebook-design/a-guide-to-interviewing-for-product-design-internships-d719dd4c146c">https://medium.com/facebook-design/a-guide-to-interviewing-for-product-design-internships-d719dd4c146c</a>
+
+<br/></li><li id='cLTACA3KSHY' class=''>This is one of the best resources ever for preparing for product design interviews. I would take a look ASAP even if you’re early on when it comes to learning Product Design because it gives such a good 
+
+<br/></li></ul><li id='cLTACAjzgIe' class='parent'>Nishtha H. Dalal has more resources that go way more in depth
+
+<br/></li><ul><li id='cLTACAFXJFf' class=''><a href="https://medium.com/@nishthaHD/facebook-product-design-interview-part-1-3e5befe33a33">https://medium.com/@nishthaHD/facebook-product-design-interview-part-1-3e5befe33a33</a> - The Recruiter Call
+
+<br/></li><li id='cLTACATta0d' class=''><a href="https://medium.com/@nishthaHD/facebook-product-design-interview-part-2-6abfad6a426d">https://medium.com/@nishthaHD/facebook-product-design-interview-part-2-6abfad6a426d</a> - Previous Work (Portfolio Reviews)
+
+<br/></li><li id='cLTACAzpEX4' class=''><a href="https://medium.com/@nishthaHD/facebook-product-design-interview-part-3-df46b9771a5b">https://medium.com/@nishthaHD/facebook-product-design-interview-part-3-df46b9771a5b</a> - App Critique
+
+<br/></li></ul></ul></ul></ul></div><br/>
+
+<br/>
+
+This is WIP and not even close to done. If you think something belongs here or want to help contribute, <a href="mailto:david@dtbui.com">let me know!</a><br/>
+
+</body></html>
