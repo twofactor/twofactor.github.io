@@ -7,12 +7,78 @@
 
   <!-- CSS -->
   <style>
-    body {
-      max-width: 460px;
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Helvetica", "Arial", sans-serif;
+      color: #444;
+      font-size: 11pt;
+      line-height: 18pt;
     }
 
-    a {
-      padding-right: 8px;
+    b {
+      color: #333;
+    }
+
+    body {
+      max-width: 500px;
+      padding: 16px;
+      margin: auto;
+    }
+
+    body {
+      margin-top: 80px;
+    }
+
+    #nav {
+      margin-bottom: 36px;
+      text-transform: lowercase;
+      text-align: center;
+    }
+
+    #nav a {
+      padding: 8px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    #nav a:hover {
+      color: #222;
+    }
+
+    #nav #logo {
+      color: #222;
+      font-weight: 500;
+      padding-left: 0px;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    #contact a:link {
+      text-decoration: none;
+      color: #555;
+    }
+
+    #contact a:hover {
+      text-decoration: none;
+      color: #222;
+    }
+
+    #content a:link {
+      text-decoration: none;
+      color: #555;
+    }
+
+    #content a:hover {
+      text-decoration: none;
+      color: #222;
     }
   </style>
 
@@ -25,25 +91,29 @@
 </head>
 
 <body>
-  <header>
-    <h1>David Bui</h1>
-  </header>
-  <section id="about">
-    <p>Illustrator and Game Designer.</p>
+  <section id="nav">
+    <a id="logo" href="/">David Bui</a>
+    <a href="/work">Resume</a>
+    <a href="/media">Media</a>
+  </section>
+  <section id="content">
+    <p>
+      <b>David Bui</b> is a recent graduate of UC Berkeley. He spends most of his time reading
+      <a href="/media">books,</a> watching
+      <a href="/media">Netflix,</a> and playing
+      <a href="/media">video games</a> on his PC and his Nintendo Switch.
+    </p>
+    <p>
+      When he was in college, David once made a meme group with a few of his friends, and they grew it to over 1.5k members by
+      producing relatable content.
+    </p>
+    <p>
+      David doesn't have a Twitter or Instagram. If you'd like to reach him, he does have an buggy email he checks about twice
+      a month. Be warned, it goes down a lot.
+    </p>
   </section>
   <section id="contact">
-    <p>
-      <a href="mailto:david@dtbui.com">Email</a>
-      <a href="https://www.linkedin.com/in/codeisvek/">LinkedIn</a>
-      <a href="https://soundcloud.com/codeisvek">SoundCloud</a>
-      <a href="http://highlyoptimized.tumblr.com">Blog</a>
-    </p>
-  </section>
-
-  <section id="projects">
-    <p>
-      <a href="learnpd.html">Learn Product Design</a>
-    </p>
+    <a href="mailto:david@dtbui.com">david@dtbui.com</a>
   </section>
 </body>
 
